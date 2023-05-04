@@ -6,28 +6,27 @@ git clone  ; cd autoawesomewm ; chmod +x autoAwesome.sh ; ./autoAwesome.sh
 
 Creado por r3dgh0st
 
-# Mas config
 
-# powerlevel10k
-
-----------------------------------
+powerlevel10k
 
 ----------------------------------
 
-# nvchad
+----------------------------------
+
+ nvchad
 
 
 sudo pacman -S neovim ; rm -rf ~/.config/nvim/ ;
 
 
-# fzf & bat & lsd
+ fzf & bat & lsd
 
 
 sudo pacman -S bat lsd ; 
 
 
 
-# grub install 
+ grub install 
 
 
 https://github.com/RomjanHossain/Grub-Themes
