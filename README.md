@@ -7,6 +7,17 @@ git clone https://github.com/R3D-GHOST/arch-install-.git ; cd autoawesomewm ; ch
 -------------------------------------------------------------------------------------------------------------------------
 
 
+
+- **WM:** [AwesomeWM](https://github.com/awesomeWM/awesome)
+- **OS:** [Arch Linux](https://archlinux.org)
+- **Terminal:** [kitty](https://github.com/kovidgoyal/kitty)
+- **Shell:** [zsh](https://wiki.archlinux.org/index.php/Zsh)
+- **Widgets:** [eww](https://github.com/elkowar/eww)
+- **Compositor:** [picom](https://github.com/ibhagwan/picom)
+- **Browser:** [firefox](https://www.mozilla.org/en-US/firefox)
+- **Application Launcher:** [rofi](https://github.com/davatorium/rofi)
+
+
 #  Desktop
 
 ![desktop](https://user-images.githubusercontent.com/94316140/236242183-c757f44a-9814-49f5-8928-361e89e4aef1.png)
