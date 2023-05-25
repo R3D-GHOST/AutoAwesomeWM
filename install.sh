@@ -27,7 +27,7 @@ function depe(){
     # kitty
     sudo pacman -S kitty
     # zip
-    sudo pacman -S zip 
+    sudo pacman -S unzip 
     # wget
     sudo pacman -S wget
 
