@@ -43,11 +43,16 @@ function awesome(){
 
     yay -S awesome-git --needed --noconfirm
 
+
 }
 
 function fonts(){
     # fonts
     yay -S ttf-material-design-icons --needed --noconfirm
+
+    yay -S ttf-iosevka
+
+    yay -S ttf-material-design-icons
 
     sleep 1
 
