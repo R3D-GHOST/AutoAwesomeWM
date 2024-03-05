@@ -1,6 +1,5 @@
 clear
 echo "Iniciando script"
-sleep 1 
 clear
 #banner 
 function banner(){
@@ -18,7 +17,11 @@ function depe(){
     
     clear
     # Instalacion de yay
-    sudo pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si
+    sudo pacman -S --needed git base-devel 
+    sleep 1
+    git clone https://aur.archlinux.org/yay.git 
+    cd yay 
+    makepkg -si
     cd ../
     # yay depencias
     yay -S picom-ibhagwan-git todo-bin alacritty rofi todo-bin acpi acpid \
@@ -86,6 +89,7 @@ function config(){
     
     # Instalando p10k root
     sudo git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /root/.powerlevel10k
+    clear
     
     # kitty conf
     sudo cp -r /kitty /opt/
@@ -118,7 +122,6 @@ function config(){
 function menu(){
     clear
     banner
-    sleep 1
     echo ""
     echo "1 --> Instalar Awesome WM"
     sleep 1
