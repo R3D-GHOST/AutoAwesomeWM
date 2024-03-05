@@ -32,6 +32,9 @@ function depe(){
     sudo pacman -S unzip 
     # wget
     sudo pacman -S wget
+    # feh
+    sudo pacman -S feh
+    
 
     # systemctl enable
     systemctl enable mpd.service
