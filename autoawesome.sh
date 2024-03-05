@@ -63,7 +63,7 @@ function fonts(){
     cp -r config/* "$HOME"/.config
 
 
-    sleep 3
+    sleep 1
 
     clear
 
@@ -92,14 +92,14 @@ function config(){
     sudo cp -r /config/kitty /root/.config/
     # zsh
     rm -rf ~/.zshrc
-    cp -r /.zshrc ~/.zshrc
+    cp -r .zshrc ~/.zshrc
     
     # zsh root
-    cp -r /.p10k.zsh ~/.p10k.zsh
-    sudo cp -r /.p10k.zsh-root /root/.p10k.zsh
+    cp -r .p10k.zsh ~/.p10k.zsh
+    sudo cp -r .p10k.zsh-root /root/.p10k.zsh
 
     # Plugins
-    sudo yay -S zsh-syntax-highlighting zsh-autosuggestions zsh-autocomplete
+    yay -S zsh-syntax-highlighting zsh-autosuggestions zsh-autocomplete
 
     sudo mkdir /usr/share/zsh-sudo
 
