@@ -17,17 +17,15 @@ function depe(){
     
     clear
     # Instalacion de yay
-    sudo pacman -S --needed git base-devel 
-    sleep 1
     git clone https://aur.archlinux.org/yay.git 
     cd yay 
     makepkg -si
     cd ../
     # yay depencias
-    yay -S picom-ibhagwan-git todo-bin alacritty rofi todo-bin acpi acpid \
+    yay -Sy awesome-git picom-git alacritty rofi todo-bin acpi acpid \
     wireless_tools jq inotify-tools polkit-gnome xdotool xclip maim \
     brightnessctl alsa-utils alsa-tools pulseaudio lm_sensors \
-    mpd mpc mpdris2 ncmpcpp playerctl zsh-autosuggestions zsh-syntax-highlighting --needed --noconfirm
+    mpd mpc mpdris2 ncmpcpp playerctl --needed 
     # kitty
     sudo pacman -S kitty
     # zip
@@ -96,11 +94,11 @@ function config(){
     sudo cp -r /config/kitty /root/.config/
     # zsh
     rm -rf ~/.zshrc
-    cp -r .zshrc ~/.zshrc
+    cp -r .zshrc ~/
     
     # zsh root
-    cp -r .p10k.zsh ~/.p10k.zsh
-    sudo cp -r .p10k.zsh-root /root/.p10k.zsh
+    cp -r .p10k.zsh ~/.
+    sudo cp -r .p10k.zsh-root /root/
 
     # Plugins
     yay -S zsh-syntax-highlighting zsh-autosuggestions zsh-autocomplete
@@ -119,24 +117,9 @@ function config(){
 
 }
 
-function menu(){
-    clear
-    banner
-    echo ""
-    echo "1 --> Instalar Awesome WM"
-    sleep 1
-    echo ""
-    echo "2 --> Salir"
-    echo ""
-    read -p "--> " menu
-    
-    if [ $menu == 1 ]; then
-        depe
-        awesome
-        fonts
-        config
-fi        
+banner
+depe
+awesome
+fonts
+config
 
-}
-
-menu
