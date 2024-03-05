@@ -9,7 +9,7 @@ git clone https://github.com/R3D-GHOST/AutoAwesomeWM.git ; cd AutoAwesomeWM ; ba
 
 
 - **WM:** [AwesomeWM](https://github.com/awesomeWM/awesome)
-- **OS:** [BlackArch](https://blackarch.org)
+- **OS:** [Arch Linux](https://archlinux.org/)
 - **Terminal:** [kitty](https://github.com/kovidgoyal/kitty)
 - **Shell:** [zsh](https://wiki.archlinux.org/index.php/Zsh)
 - **Widgets:** [eww](https://github.com/elkowar/eww)
