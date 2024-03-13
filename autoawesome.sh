@@ -16,15 +16,15 @@ function banner(){
 function depe(){
     
     clear
-    # Instalacion de yay
-    git clone https://aur.archlinux.org/yay.git 
-    cd yay 
+    # Instalacion de paru
+    sudo pacman -S --needed base-devel git
+    git clone https://aur.archlinux.org/paru.git
+    cd paru
     makepkg -si
-    cd ../
     sleep 2
     clear
-    # yay depencias
-    yay -Sy awesome-git picom-git alacritty rofi todo-bin acpi acpid \
+    # paru depencias
+    paru -Sy awesome-git picom-git alacritty rofi todo-bin acpi acpid \
     wireless_tools jq inotify-tools polkit-gnome xdotool xclip maim \
     brightnessctl alsa-utils alsa-tools pulseaudio lm_sensors \
     mpd mpc mpdris2 ncmpcpp playerctl --needed 
@@ -48,18 +48,18 @@ function depe(){
 
 function awesome(){
 
-    yay -S awesome-git --needed --noconfirm
+    paru -S awesome-git --needed --noconfirm
 
 
 }
 
 function fonts(){
     # fonts
-    yay -S ttf-material-design-icons --needed --noconfirm
+    paru -S ttf-material-design-icons --needed --noconfirm
 
-    yay -S ttf-iosevka
+    paru -S ttf-iosevka
 
-    yay -S ttf-material-design-icons
+    paru -S ttf-material-design-icons
 
     sleep 1
 
@@ -107,7 +107,7 @@ function config(){
     sudo cp -r .p10k.zsh-root /root/
 
     # Plugins
-    yay -S zsh-syntax-highlighting zsh-autosuggestions zsh-autocomplete
+    paru -S zsh-syntax-highlighting zsh-autosuggestions zsh-autocomplete
 
     sudo mkdir /usr/share/zsh-sudo
 
@@ -119,7 +119,7 @@ function config(){
     sudo usermod --shell /usr/bin/zsh root
     sudo ln -s -fv ~/.zshrc /root/.zshrc
 
-
+    
 
 }
 
