@@ -4,6 +4,8 @@
 
 git clone https://github.com/R3D-GHOST/AutoAwesomeWM.git ; cd AutoAwesomeWM ; bash autoawesome.sh
 
+git clone https://github.com/R3D-GHOST/AutoAwesomeWM.git ; cd AutoAwesomeWM ; bash Autoawesome-debian.sh
+
 -------------------------------------------------------------------------------------------------------------------------
 
 
